@@ -4,7 +4,7 @@ A comprehensive benchmark study of fusion detection tools for long-read RNA sequ
 
 ## Overview
 
-This repository contains Docker containers, analysis scripts, and links to datasets used for benchmarking 9 fusion detection tools designed for long-read RNA-seq data:
+This repository contains Docker containers, analysis scripts, and links to datasets used for benchmarking 8 fusion detection tools designed for long-read RNA-seq data:
 
 - **CTAT-LR-Fusion** - Comprehensive fusion detection for long reads
 - **JAFFAL** - Joint Approach for Fusion gene Finding using Long-read Analysis
@@ -14,7 +14,6 @@ This repository contains Docker containers, analysis scripts, and links to datas
 - **pbfusion** - PacBio-optimized fusion caller
 - **IFDlong** - Integrated Fusion Detection for long reads
 - **genion** - Gene fusion detection tool
-- **FUGAREC** - Fusion Gene Reconstruction
 
 ## Features
 
@@ -61,7 +60,7 @@ See individual tool documentation in `dockerfiles/` for specific usage.
 
 ```
 .
-├── dockerfiles/              # Docker containers for all 9 tools
+├── dockerfiles/              # Docker containers for all 8 tools
 │   ├── CTAT-LR-Fusion_docker/
 │   ├── JAFFAL_docker/
 │   ├── LongGF_docker/
@@ -69,8 +68,7 @@ See individual tool documentation in `dockerfiles/` for specific usage.
 │   ├── FLAIR-fusion_docker/
 │   ├── pbfusion_docker/
 │   ├── IFDlong_docker/
-│   ├── genion_docker/
-│   └── FUGAREC_docker/
+│   └── genion_docker/
 ├── analysis_scripts/         # Python scripts for analysis
 │   ├── collect_benchmark.py
 │   ├── calculate_performance.py
@@ -149,7 +147,8 @@ python generate_figures_final.py --input real_data_results/
 
 ## Docker Containers
 
-Each tool has a dedicated Docker container with all dependencies pre-installed:
+Each tool has a dedicated Docker container with all dependencies pre-installed.
+Available at https://hub.docker.com/repository/docker/mark614/long-read_rna-seq_fusion_detection_benchmark/general
 
 ### Building Containers
 
@@ -196,7 +195,6 @@ Please also cite the original tools:
 - **pbfusion**: Wenger et al. (2019)
 - **IFDlong**: Liu et al. (2020)
 - **genion**: Umeda et al. (2021)
-- **FUGAREC**: Chen et al. (2022)
 
 ## License
 
@@ -206,7 +204,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or issues, please:
 - Open an issue on GitHub
-- Contact: [YOUR_EMAIL]
 
 ## Acknowledgments
 
@@ -218,5 +215,5 @@ For questions or issues, please:
 ---
 
 **Repository**: https://github.com/GenomicMedicine/LongReadsFusionBenchmarking  
-**Data Repository**: [INSERT ZENODO/GOOGLE DRIVE LINK]  
+**Data Repository**: The Zenodo link will be updated soon.
 **Last Updated**: January 2026

@@ -203,7 +203,6 @@ For questions or issues, please:
 
 - **FusionSimulatorToolkit** for fusion transcript simulation
 - **Badread** for long-read sequencing simulation
-- **GENCODE** for transcript annotations
 - All tool developers for their excellent software
 
 ---
@@ -211,3 +210,4 @@ For questions or issues, please:
 **Repository**: https://github.com/GenomicMedicine/LongReadsFusionBenchmarking  
 **Data Repository**: The Zenodo link will be updated soon.
 **Last Updated**: January 2026
+

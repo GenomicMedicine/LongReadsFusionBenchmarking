@@ -177,12 +177,6 @@ See tool-specific README files in each Docker directory for detailed usage.
 
 ## Citation
 
-If you use this benchmark in your research, please cite:
-
-```
-[Your Paper Citation Here]
-```
-
 ## Tool Citations
 
 Please also cite the original tools:

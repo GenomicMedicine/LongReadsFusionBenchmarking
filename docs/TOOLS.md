@@ -16,7 +16,7 @@ This benchmark evaluates 9 fusion detection tools designed for long-read RNA seq
 | **pbfusion** | 0.4.0 | PacBio (optimized) | Junction-based | Fast | Low |
 | **IFDlong** | 1.0 | ONT, PacBio | Integrated filtering | Medium | Medium |
 | **genion** | 1.1 | ONT, PacBio | Machine learning | Medium | Medium |
-| **FUGAREC** | 1.0 | ONT, PacBio | Read reconstruction | Slow | High |
+
 
 ## Tool Details
 
@@ -282,38 +282,7 @@ bash run_genion.sh \
 
 ---
 
-### FUGAREC
 
-**Description**: Fusion Gene Reconstruction through read realignment.
-
-**Algorithm**:
-- Initial fusion candidate detection
-- Read extraction and gap filling
-- Local realignment with BLAT
-- Fusion transcript reconstruction
-
-**Strengths**:
-- Reconstructs full fusion transcripts
-- Good for complex breakpoints
-- Detailed junction sequences
-
-**Limitations**:
-- Slower due to BLAT step
-- Higher memory usage
-- Complex workflow
-
-**Citation**: Chen K et al. (2022) FUGAREC
-
-**Docker Usage**:
-```bash
-cd dockerfiles/fugarec_docker
-bash run_FUGAREC.sh \
-    /path/to/reads.fastq \
-    /path/to/genome_lib \
-    /path/to/output
-```
-
----
 
 ## Output Formats
 

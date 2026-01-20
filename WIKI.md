@@ -27,7 +27,6 @@ This benchmark study evaluates 9 fusion detection tools for long-read RNA sequen
 - **pbfusion** - PacBio-optimized
 - **IFDlong** - Integrated filtering
 - **genion** - Machine learning classifier
-- **FUGAREC** - Fusion reconstruction
 
 ### Key Features
 
@@ -391,7 +390,7 @@ Based on 40 simulated datasets:
 | pbfusion | 0.87 | 0.85 | 0.90 | Fast | Low |
 | IFDlong | 0.89 | 0.89 | 0.89 | Medium | Medium |
 | genion | 0.88 | 0.87 | 0.89 | Medium | Medium |
-| FUGAREC | 0.86 | 0.88 | 0.84 | Slow | High |
+
 
 ### Recommended Use Cases
 
@@ -488,35 +487,7 @@ python --version  # Should be 3.7+
 1. **Check documentation**: [docs/](docs/)
 2. **Search issues**: https://github.com/GenomicMedicine/LongReadsFusionBenchmarking/issues
 3. **Open new issue**: Provide error logs and system info
-4. **Email**: [YOUR_EMAIL]
 
----
-
-## Citation
-
-If you use this benchmark, please cite:
-
-```
-[Your Paper Citation Here]
-```
-
-And cite the tools you use:
-
-- **CTAT-LR-Fusion**: Haas BJ et al. (2019)
-- **JAFFAL**: Davidson NM et al. (2022)
-- **LongGF**: [Citation]
-- **FusionSeeker**: Akers NK et al. (2018)
-- **FLAIR-fusion**: Tang AD et al. (2020)
-- **pbfusion**: Wenger AM et al. (2019)
-- **IFDlong**: [Citation]
-- **genion**: Umeda T et al. (2021)
-- **FUGAREC**: [Citation]
-
-Also cite:
-- **Badread**: Wick RR (2019)
-- **FusionSimulatorToolkit**: https://github.com/FusionSimulatorToolkit/FusionSimulatorToolkit
-
----
 
 **Last Updated**: January 2026  
 **Repository**: https://github.com/GenomicMedicine/LongReadsFusionBenchmarking  

@@ -213,7 +213,6 @@ And cite the original data sources:
 
 For questions about the real datasets:
 - Open an issue on GitHub
-- Email: [YOUR_EMAIL]
 
 ## Acknowledgments
 

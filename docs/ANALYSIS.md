@@ -375,19 +375,11 @@ Scripts use consistent naming:
 - `figureS2_panel_X.pdf` - Supplementary figure panels
 - `tableS1_*.csv` - Supplementary tables
 
-## Citation
-
-If you use these scripts, please cite:
-
-```
-[Your Paper Citation]
-```
 
 ## Contact
 
 For questions or issues:
 - GitHub Issues: https://github.com/GenomicMedicine/LongReadsFusionBenchmarking/issues
-- Email: [YOUR_EMAIL]
 
 ---
 

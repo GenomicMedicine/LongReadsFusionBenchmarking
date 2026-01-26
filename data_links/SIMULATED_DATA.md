@@ -91,23 +91,6 @@ badread simulate \
 
 ## Download Instructions
 
-### Option 1: Google Drive (Recommended for Individual Datasets)
-
-Download individual datasets from Google Drive:
-
-```bash
-# Install gdown for Google Drive downloads
-pip install gdown
-
-# Download a specific dataset (example)
-gdown --id FILE_ID -O nanopore2023_10x_0.95_15000.tar.gz
-tar -xzf nanopore2023_10x_0.95_15000.tar.gz
-```
-
-**Google Drive Links**:
-- Full dataset collection: [INSERT GOOGLE DRIVE LINK]
-- Individual datasets: See table below
-
 ### Option 2: Zenodo (Recommended for Complete Collection)
 
 Download the complete dataset collection from Zenodo (with permanent DOI):
@@ -118,7 +101,7 @@ wget https://zenodo.org/record/XXXXXX/files/fusion_benchmark_simulated_data.tar.
 tar -xzf fusion_benchmark_simulated_data.tar.gz
 ```
 
-**Zenodo Repository**: [INSERT ZENODO DOI LINK]
+**Zenodo Repository**: 10.5281/zenodo.18372898
 
 ### Option 3: Command Line Download Script
 
@@ -133,28 +116,6 @@ bash download_simulated_data.sh \
 # Download all datasets
 bash download_simulated_data.sh --all --output_dir ./simulated_data
 ```
-
-## Dataset Structure
-
-Each dataset contains:
-
-```
-nanopore2023_10x_0.95_15000/
-├── reads.fastq                          # Simulated reads
-├── fusion_truth.txt                     # Ground truth fusion list
-├── CTAT-LR-Fusion/                      # Tool results
-│   ├── ctat-LR-fusion.fusion_predictions.tsv
-│   └── ...
-├── JAFFAL/
-├── LongGF/
-├── FusionSeeker/
-├── FLAIR-fusion/
-├── pbfusion/
-├── IFDlong/
-├── genion/
-└── FUGAREC/
-```
-
 ## File Formats
 
 ### reads.fastq

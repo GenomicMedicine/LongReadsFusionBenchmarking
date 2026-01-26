@@ -6,97 +6,18 @@ We analyzed real long-read RNA-seq datasets from multiple cell lines and platfor
 
 ## Dataset Catalog
 
-### Bulk RNA-seq Datasets
+| Sample / Cell Line | Sequencing Platform | Biological Origin / Cancer Type | Data Source / Accession |
+|---|---|---|---|
+| MCF7, SKBR3 | PacBio Iso-Seq | Breast Cancer | SRA: SRP055913, SRP150606 |
+| HCT116 | PacBio Iso-Seq | Colon Cancer | SRA: SRP091981 (PRJNA321560) |
+| MCF7, A549, K562, HCT116, HepG2, H9, HEYA8 | Oxford Nanopore (ONT) | Multiple Cancer Types | GoekeLab sg-nex-data (https://github.com/GoekeLab/sg-nex-data/) |
+| Colon Cancer (Primary) | Long-read RNA-seq | Colon Cancer | GEO: GSE155921 (PRJNA656187) |
+| AML (Primary) | Long-read RNA-seq | Acute Myeloid Leukemia | BioProject: PRJNA640456 |
+| NA12878 | Oxford Nanopore (ONT) | Normal Human Cell Line | Nanopore WGS Consortium (https://github.com/nanopore-wgs-consortium/NA12878) |
+| UHR (Universal Human Reference) | ONT (GridION) | Pooled (10 Cell Lines) | BioProject: PRJNA639366 |
 
-| Cell Line | Platform | Data Type | Fusions Known | Source |
-|-----------|----------|-----------|---------------|--------|
-| **A549** | ONT | Bulk | Yes | Lung adenocarcinoma |
-| **AML** | ONT | Bulk | Yes | Acute myeloid leukemia |
-| **H9** | ONT | Bulk | No | Embryonic stem cells |
-| **HCC827** | ONT, Illumina, PacBio | Bulk | Yes | Lung adenocarcinoma |
-| **Hct116** | ONT, PacBio | Bulk | Yes | Colorectal carcinoma |
-| **HepG2** | ONT | Bulk | Yes | Hepatocellular carcinoma |
-| **HEYA8** | ONT | Bulk | Yes | Ovarian carcinoma |
-| **K562** | ONT | Bulk | Yes | Chronic myelogenous leukemia |
-| **MCF7** | ONT, PacBio | Bulk | Yes | Breast adenocarcinoma |
-| **NA12878** | ONT | Bulk | No | Normal B-lymphocyte |
-| **NCI-H1975** | ONT, Illumina | Bulk | Yes | Lung adenocarcinoma |
-| **SKBR3** | PacBio | Bulk | Yes | Breast adenocarcinoma |
-| **UHR** | ONT | Bulk | No | Universal Human Reference |
-
-### Single-cell RNA-seq Datasets
-
-| Sample | Platform | Data Type | Source |
-|--------|----------|-----------|--------|
-| **CC** | ONT | scRNA-seq | Cell line culture |
-| **H838** | ONT | scRNA-seq | Lung cancer |
-| **HCC** | ONT | scRNA-seq | Hepatocellular carcinoma |
-| **LBT** | ONT | scRNA-seq | Lung tissue |
-
-## Data Structure
-
-Each dataset directory contains:
-
-```
-HCC827/
-├── ONT/
-│   ├── reads.fastq.gz                   # Raw reads
-│   ├── aligned.bam                      # Aligned reads (if available)
-│   ├── known_fusions.txt                # Known/validated fusions
-│   ├── CTAT-LR-Fusion/                  # Tool results
-│   ├── JAFFAL/
-│   ├── LongGF/
-│   ├── FusionSeeker/
-│   ├── FLAIR-fusion/
-│   ├── pbfusion/
-│   ├── IFDlong/
-│   ├── genion/
-│   └── FUGAREC/
-├── Illumina/                            # Short-read data (if available)
-│   └── ...
-└── PacBio/                              # PacBio data (if available)
-    └── ...
-```
 
 ## Download Instructions
-
-### Option 1: Google Drive
-
-Download individual datasets:
-
-```bash
-# Install gdown
-pip install gdown
-
-# Download HCC827 ONT data
-gdown --id FILE_ID -O HCC827_ONT.tar.gz
-tar -xzf HCC827_ONT.tar.gz
-```
-
-**Google Drive Links**:
-- Complete collection: [INSERT GOOGLE DRIVE LINK]
-- Individual cell lines: See table below
-
-### Option 2: Zenodo
-
-Download from Zenodo (permanent DOI):
-
-```bash
-wget https://zenodo.org/record/XXXXXX/files/fusion_benchmark_real_data.tar.gz
-tar -xzf fusion_benchmark_real_data.tar.gz
-```
-
-**Zenodo Repository**: [INSERT ZENODO DOI LINK]
-
-### Option 3: Original Data Sources
-
-Some datasets are publicly available from original sources:
-
-| Dataset | Source | Accession |
-|---------|--------|-----------|
-| HCC827 | SRA | PRJNA XXX |
-| K562 | SRA | PRJNA XXX |
-| NA12878 | SRA | PRJNA XXX |
 
 ```bash
 # Download from SRA
@@ -133,7 +54,7 @@ fastq-dump --split-files SRRXXXXXX
 
 | Metric | Value |
 |--------|-------|
-| Total Cell Lines | 13 bulk + 4 scRNA-seq |
+| Total Cell Lines | 13 bulk |
 | ONT Datasets | 15 |
 | PacBio Datasets | 4 |
 | Illumina Datasets | 2 |
@@ -198,13 +119,7 @@ For cell lines with known fusions:
 
 ## Citation
 
-If you use these datasets, please cite:
-
-```
-[Your Paper Citation]
-```
-
-And cite the original data sources:
+If you use these datasets, please cite the original data sources:
 
 - For SRA datasets, cite the original studies
 - For cell line characterization, cite ATCC/vendor documentation

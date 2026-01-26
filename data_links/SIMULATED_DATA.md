@@ -2,7 +2,7 @@
 
 ## Overview
 
-We generated 40 simulated long-read RNA-seq datasets to comprehensively benchmark fusion detection tools across different sequencing platforms, coverage depths, read accuracies, and read lengths.
+We generated 15 simulated long-read RNA-seq datasets to comprehensively benchmark fusion detection tools across different sequencing platforms, coverage depths, read accuracies, and read lengths.
 
 ## Dataset Generation Pipeline
 

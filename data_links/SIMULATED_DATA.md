@@ -48,75 +48,46 @@ badread simulate \
 - `--chimeras 0`: No artificial chimeric reads (only biological fusions)
 - `--glitches 0,0,0`: No sequencing artifacts
 
-## Dataset Catalog
-
 ### Parameter Space
 
 | Parameter | Values |
 |-----------|--------|
 | **Platform** | ONT 2018, ONT 2020, ONT 2023, PacBio 2016, PacBio 2021 |
-| **Coverage** | 1×, 5×, 10×, 50×, 100× |
-| **Mean Identity** | 80%, 85%, 90%, 95%, 99.8% |
+| **Coverage** | 1×, 10×, 100× |
+| **Mean Identity** | 80%, 85%, 99.8%, 95% *(legacy ONT2018/2020 only)* |
 | **Mean Read Length** | 300bp, 1kb, 5kb, 15kb, 50kb |
 
-### All Datasets (40 total)
+### All Datasets (15 total)
 
-#### Oxford Nanopore Datasets (15)
+#### Oxford Nanopore Datasets (5)
 
-**ONT 2023 Chemistry (R10.4.1)**:
-- `nanopore2023_1x_0.95_15000` - 1× coverage, 95% identity, 15kb reads
-- `nanopore2023_5x_0.95_15000` - 5× coverage, 95% identity, 15kb reads
-- `nanopore2023_10x_0.95_15000` - 10× coverage, 95% identity, 15kb reads ⭐ *Default*
-- `nanopore2023_50x_0.95_15000` - 50× coverage, 95% identity, 15kb reads
-- `nanopore2023_100x_0.95_15000` - 100× coverage, 95% identity, 15kb reads
+**ONT 2023 Chemistry**:
 - `nanopore2023_10x_0.8_15000` - 10× coverage, 80% identity, 15kb reads
 - `nanopore2023_10x_0.85_15000` - 10× coverage, 85% identity, 15kb reads
-- `nanopore2023_10x_0.9_15000` - 10× coverage, 90% identity, 15kb reads
-- `nanopore2023_10x_0.998_15000` - 10× coverage, 99.8% identity, 15kb reads
-- `nanopore2023_10x_0.95_300` - 10× coverage, 95% identity, 300bp reads
-- `nanopore2023_10x_0.95_1000` - 10× coverage, 95% identity, 1kb reads
-- `nanopore2023_10x_0.95_5000` - 10× coverage, 95% identity, 5kb reads
-- `nanopore2023_10x_0.95_50000` - 10× coverage, 95% identity, 50kb reads
+- `nanopore2023_10x_0.998_15000` - 10× coverage, 99.8% identity, 15kb reads ⭐ *Default*
 
-**ONT 2020 Chemistry (R9.4.1)**:
-- `nanopore2020_10x_0.95_15000` - 10× coverage, 95% identity, 15kb reads
+**ONT 2020 Chemistry**:
+- `nanopore2020_10x_0.95_15000` - 10× coverage, 95% identity, 15kb reads *(legacy profile)*
 
-**ONT 2018 Chemistry (R9.4)**:
-- `nanopore2018_10x_0.95_15000` - 10× coverage, 95% identity, 15kb reads
+**ONT 2018 Chemistry**:
+- `nanopore2018_10x_0.95_15000` - 10× coverage, 95% identity, 15kb reads *(legacy profile)*
 
-#### PacBio Datasets (25)
+#### PacBio Datasets (10)
 
-**PacBio 2016 (RS II, P6-C4 Chemistry)** (15):
-- `pacbio2016_1x_0.95_15000` - 1× coverage, 95% identity, 15kb reads
-- `pacbio2016_5x_0.95_15000` - 5× coverage, 95% identity, 15kb reads
-- `pacbio2016_10x_0.95_15000` - 10× coverage, 95% identity, 15kb reads ⭐ *Default*
-- `pacbio2016_50x_0.95_15000` - 50× coverage, 95% identity, 15kb reads
-- `pacbio2016_100x_0.95_15000` - 100× coverage, 95% identity, 15kb reads
-- `pacbio2016_10x_0.8_15000` - 10× coverage, 80% identity, 15kb reads
-- `pacbio2016_10x_0.85_15000` - 10× coverage, 85% identity, 15kb reads
-- `pacbio2016_10x_0.9_15000` - 10× coverage, 90% identity, 15kb reads
-- `pacbio2016_10x_0.95_300` - 10× coverage, 95% identity, 300bp reads
-- `pacbio2016_10x_0.95_1000` - 10× coverage, 95% identity, 1kb reads
-- `pacbio2016_10x_0.95_5000` - 10× coverage, 95% identity, 5kb reads
-- `pacbio2016_10x_0.95_50000` - 10× coverage, 95% identity, 50kb reads
-- `pacbio2016_10x_0.998_15000` - 10× coverage, 99.8% identity, 15kb reads
-
-**PacBio 2021 (Sequel IIe HiFi)** (10):
+**PacBio 2021 (Sequel IIe HiFi)**:
 - `pacbio2021_1x_0.998_15000` - 1× coverage, 99.8% identity, 15kb reads
-- `pacbio2021_5x_0.998_15000` - 5× coverage, 99.8% identity, 15kb reads
 - `pacbio2021_10x_0.998_15000` - 10× coverage, 99.8% identity, 15kb reads ⭐ *Default*
-- `pacbio2021_50x_0.998_15000` - 50× coverage, 99.8% identity, 15kb reads
 - `pacbio2021_100x_0.998_15000` - 100× coverage, 99.8% identity, 15kb reads
-- `pacbio2021_10x_0.8_15000` - 10× coverage, 80% identity, 15kb reads
-- `pacbio2021_10x_0.85_15000` - 10× coverage, 85% identity, 15kb reads
-- `pacbio2021_10x_0.9_15000` - 10× coverage, 90% identity, 15kb reads
-- `pacbio2021_10x_0.95_15000` - 10× coverage, 95% identity, 15kb reads
 - `pacbio2021_10x_0.998_300` - 10× coverage, 99.8% identity, 300bp reads
 - `pacbio2021_10x_0.998_1000` - 10× coverage, 99.8% identity, 1kb reads
 - `pacbio2021_10x_0.998_5000` - 10× coverage, 99.8% identity, 5kb reads
 - `pacbio2021_10x_0.998_50000` - 10× coverage, 99.8% identity, 50kb reads
 
+**PacBio 2016 (RS II, P6-C4 Chemistry)**:
+- `pacbio2016_10x_0.998_15000` - 10× coverage, 99.8% identity, 15kb reads *(high-accuracy platform cohort)*
+
 ⭐ *Default datasets* are recommended for initial benchmarking.
+
 
 ## Download Instructions
 

@@ -203,25 +203,12 @@ badread simulate \
 
 See complete simulation commands in [TableS3_Simulated_Datasets.csv](../docs/TableS3_Simulated_Datasets.csv)
 
-## Citation
-
-If you use these datasets, please cite:
-
-```
-[Your Paper Citation]
-```
-
-And also cite:
-
-- **Badread**: Wick RR (2019) Badread: simulation of error-prone long reads. Journal of Open Source Software, 4(36), 1316.
-- **FusionSimulatorToolkit**: Haas BJ et al. (2019) https://github.com/FusionSimulatorToolkit/FusionSimulatorToolkit
-- **GENCODE**: Frankish A et al. (2021) GENCODE 2021. Nucleic Acids Res.
+: Frankish A et al. (2021) GENCODE 2021. Nucleic Acids Res.
 
 ## Contact
 
 For questions about the datasets:
 - Open an issue on GitHub
-- Email: [YOUR_EMAIL]
 
 ---
 

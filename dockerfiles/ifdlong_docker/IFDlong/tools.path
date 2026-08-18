@@ -1,0 +1,18 @@
+#// Path to tools used by the IFDlong pipeline
+#// Path to scripts used by the IFDlong pipeline
+reportFuns="/data2/reference/IFDlong/scripts/reportFuns.R"
+reportFuns_parallel="/data2/reference/IFDlong/scripts/reportFuns_parallel.R"
+EXONuncover="/data2/reference/IFDlong/scripts/EXONuncover.R"
+report="/data2/reference/IFDlong/scripts/report.R"
+quant="/data2/reference/IFDlong/scripts/quant.R"
+refGen="/data2/reference/IFDlong/scripts/refGen.R"
+refAAGen="/data2/reference/IFDlong/scripts/refAAGen.R"
+
+Rscript="/data2/software/enter/envs/GFD_env/bin/Rscript"
+minimap2="/data2/software/enter/envs/GFD_env/bin/minimap2"
+samtools="/data2/software/enter/envs/GFD_env/bin/samtools"
+bedtools="/data2/software/enter/envs/GFD_env/bin/bedtools"
+Rscript="/usr/bin/Rscript"
+minimap2="/data2/software/enter/envs/GFD_env/bin/minimap2"
+samtools="/usr/bin/samtools"
+bedtools="/usr/bin/bedtools"

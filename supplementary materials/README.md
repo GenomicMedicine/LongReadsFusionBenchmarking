@@ -121,15 +121,6 @@ Here, **peak RSS** means the maximum resident set size (the highest physical RAM
 |---------|--------|--------|
 | `pacbio2021_100x_0.998_15kb` | IFDlong | **Runtime exceeded ~1.5 TB memory limit.** Mapping/intersect steps completed but IFDlong did not produce `Fusion_quant` output (peak RSS ~1.46 TB). |
 
-### Real (5 missing, all IFDlong)
-
-| Sample | Method | Reason |
-|--------|--------|--------|
-| `Hct116-cDNA` | IFDlong | **Runtime exceeded ~1.5 TB memory limit** during IFDlong processing (peak RSS ~1.38 TB). No final `Fusion_quant` file. |
-| `H9-cDNA` | IFDlong | **Runtime exceeded ~1.5 TB memory limit** during IFDlong processing. No final `Fusion_quant` file. |
-| `H9-dcDNA` | IFDlong | **Runtime exceeded ~1.5 TB memory limit** during IFDlong processing. No final `Fusion_quant` file. |
-| `HEYA8-cDNA` | IFDlong | **Runtime exceeded ~1.5 TB memory limit** during IFDlong processing. No final `Fusion_quant` file. |
-| `HEYA8-dcDNA` | IFDlong | **Runtime exceeded ~1.5 TB memory limit** during IFDlong processing. No final `Fusion_quant` file. |
 
 ### Present but empty (no predictions)
 
